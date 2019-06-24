@@ -1,0 +1,2 @@
+# KeepYourKidsAtHome_IBM
+spatially implicit individual-based SIR model for a large range of host and pathogen life-history strategies. We focused specifically on age-dependent between-group interactions, a life history strategy referred as “keep kids at home” (KKH), which occurs in social species rearing their offspring within colonies or communal nurseries, in which juveniles do not engage in between-group contact. We show that such KKH strategy has great influence on the dynamics of diseases, which confer lifelong immunity in group-living species. 
