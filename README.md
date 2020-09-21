@@ -1,4 +1,4 @@
-# KeepYourKidsAtHome_IBM
+# Marescto et al. 2020 bioRxiv KeepYourKidsAtHome_IBM
 
 This spatially implicit individual-based SIR model developped for a large range of host and pathogen life-history strategies. We focused specifically on offspring with restricted between-group contact (ORC), a life history traits, which occurs in social species rearing their offspring within communal nurseries, in which juveniles do not engage in between-group interactions before a certain age. We show that such ORC strategy has great influence on the dynamics of diseases, which confer lifelong immunity in group-living species. 
 
