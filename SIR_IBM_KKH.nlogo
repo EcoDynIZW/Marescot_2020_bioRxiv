@@ -140,15 +140,6 @@ end ;---------------------------------------------------------------------------
 ;----------------------------------RUN-------------------------------------------------------------
 to go
   ;;profiler:start
-
-   ifelse frequency_transmission = true
-  [
-       infectionFreq ; infection process under frequency dependent transmission
-  ]
-  [
-     infectionDDP  ;  infection process under density dependent transmission
-  ]
-
   do-virus-checks ; procedure which track the time since infection and assign an immune status to individuals who survived infection until the maximum infection-length
   death ; natural death and disease-related mortaltiy
   reproduce ; reproduction
