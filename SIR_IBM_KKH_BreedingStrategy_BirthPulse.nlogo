@@ -39,8 +39,6 @@ globals
  infecub
  cub
  cuboutput
- breedingadult
- breedingadultoutput
  tickyear
 ]
 
@@ -112,10 +110,9 @@ to setup ; initialization-------------------------------------------------------
 
    set cub 0
    set cuboutput 0
-   set breedingadult 0
    set tickyear 0
-   set breedingadultoutput 0
-  ;---------------calculation of infectivity given the Rnot
+   
+;---------------calculation of infectivity given the Rnot
 
   set weeklysurv   survival ^ (1 / 52)
 
@@ -328,9 +325,8 @@ to reproduce
     set tickyear tickyear + 1
     ask patches with [clan-territory = true and count hyenas-here <=  group-size]
     [
-      set breedingadult breedingadult + count hyenas-here with [age >= age-repro]
-      ask n-of (count hyenas-here with [age >= age-repro] / 2) hyenas-here with [age >= age-repro]
-      [
+       ask hyenas-here with [age >= age-repro]
+       [
         if (random-float 1) < (fertility)
         [
 
@@ -344,7 +340,7 @@ to reproduce
        set cuboutput cub
        ask patches with [clan-territory = true and count hyenas-here <=  group-size]
        [
-        ask hyenas-here with [age >= age-repro]
+        ask n-of (count hyenas-here with [age >= age-repro] / 2) hyenas-here with [age >= age-repro]
         [
         if cuboutput > 0
         [
@@ -355,13 +351,11 @@ to reproduce
             set disease "susceptible"
             set virus-check-timer 0
           ]
-          set cuboutput cub - 1 ;round (52 * fertility)
+          set cuboutput cuboutput - 1 
         ]
         ]
        ]
         set cub 0
-        set breedingadultoutput breedingadult / 52
-        set breedingadult 0
         set tickyear 0
       ]
 
