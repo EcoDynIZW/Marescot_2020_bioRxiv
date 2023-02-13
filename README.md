@@ -1,4 +1,4 @@
-# Marescot et al. 2020 bioRxiv KeepYourKidsAtHome_IBM
+# Marescot et al. (2020) bioRxiv
 
 > Lucile Marescot, Mathias Franz, Sarah Benhaiem, Heribert Hofer, Marion L. East, Stephanie Kramer-Schadt (2020) ‘Keeping the kids at home’ can limit the persistence of contagious pathogens in social animals. *bioRxiv*. DOI: [10.1101/2020.04.11.036806](https://doi.org/10.1101/2020.04.11.036806)
 
